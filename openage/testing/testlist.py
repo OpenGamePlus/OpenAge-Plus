@@ -32,6 +32,7 @@ def tests_py():
     )
     yield ("openage.testing.misc_cpp.enum", "tests the interface for C++'s util::Enum class")
     yield ("openage.util.fslike.test.test", "test the filesystem abstraction subsystem")
+    yield ("openage.util.fslike.cpp_tests.test", "access Python fslikes through C++ paths")
     yield "openage.util.threading.test_concurrent_chain"
 
 
@@ -79,6 +80,7 @@ def tests_cpp():
     yield "openage::job::tests::test_job_manager"
     yield "openage::path::tests::path_node", "pathfinding"
     yield "openage::path::tests::flow_field", "pathfinding"
+    yield "openage::path::tests::grid_from_sectors", "pathfinding"
     yield "openage::pyinterface::tests::pyobject"
     yield "openage::pyinterface::tests::err_py_to_cpp"
     yield "openage::renderer::tests::font"
